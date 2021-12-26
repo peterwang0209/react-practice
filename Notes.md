@@ -1,3 +1,12 @@
+# Table of Content
+- [Table of Content](#table-of-content)
+    - [General Background Knowledge of React](#general-background-knowledge-of-react)
+    - [Course Outlines](#course-outlines)
+    - [JavaScript Refresher](#javascript-refresher)
+      - [let & const](#let--const)
+
+
+
 ### General Background Knowledge of React
 
 - Reason to use react is we dont want to wait for new pages to load or actions to start
