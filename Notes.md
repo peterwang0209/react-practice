@@ -5,6 +5,12 @@
   - [Course Outlines](#course-outlines)
   - [JavaScript Refresher](#javascript-refresher)
     - [let & const](#let--const)
+    - [arrow](#arrow)
+    - [exports & imports](#exports--imports)
+    - [classes](#classes)
+    - [spread & rest operators](#spread--rest-operators)
+    - [destructuring](#destructuring)
+    - [array](#array)
 
 ## General Background Knowledge of React
 
@@ -36,4 +42,80 @@ repetitive task.
 
 used to be `var` but now we have `let` and `const`
 
-testing
+`const` cannot be changed, `var` can be changed.
+
+[Code Example](./JavaScript_Refresh/let_const.js)
+
+### arrow
+
+appears on ES6, it is a substitude of function.
+
+[Code Example](./JavaScript_Refresh/arrow.js)
+
+### exports & imports
+
+export and import function and variable/const
+
+[Code Example](./JavaScript_Refresh/export_import/app.js)
+
+### classes
+
+classes can store properties and funcitons.
+classes can obtain Inheritance
+classes can be used to create instance and we can use this instance to call its function
+
+[Code Example for ES6](/JavaScript_Refresh/classes_ES6.js)
+[Code Example for ES7](JavaScript_Refresh/classes_ES7.js)
+
+### spread & rest operators
+
+both spread and rest operators use `...` this notation
+spread is used to split up array elements OR object properties
+
+```javascript
+const newArray = [...oldArray,1,2]
+const newObject = [...oldObject, newProp:5]
+```
+
+rest is used to merge a list of function arguments into an array
+
+```javascript
+function sortArgs(...args) {
+  return args.sort()
+}
+```
+
+[Code Example](./JavaScript_Refresh/spread_rest_operators.js)
+
+### destructuring
+
+extract array elements or object properties and store them in variables
+
+array destructuring
+
+```javascript
+[a,b] = ['Hello','Max']
+console.log(a)
+console.log(b)
+```
+
+object destructureing
+
+```js
+{name} = {name: 'Max', age:28}
+console.log{name}
+console.log{age}
+```
+
+[Code Example](JavaScript_Refresh/destructuring.js)
+
+### array
+
+[Code Example](JavaScript_Refresh/array.js)
+
+## React Basics & Working With Components
+
+### Components
+
+React is all about `component`
+All user interfaces in the end are made up of components
