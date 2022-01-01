@@ -11,6 +11,8 @@
     - [spread & rest operators](#spread--rest-operators)
     - [destructuring](#destructuring)
     - [array](#array)
+  - [React Basics & Working With Components](#react-basics--working-with-components)
+    - [Components](#components)
 
 ## General Background Knowledge of React
 
@@ -30,15 +32,17 @@ repetitive task.
 
 | Study Parts      | Description |
 | ----------- | ----------- |
-| Basic & Foundation      | 1. Components & Building UIs 2. Working with Events & Data: "props" and "state" <br/> 3. Styling React Apps & Components <br/> 4. React Hooks      |
-| Advanced Concepts   | 1. Side Effects, "Refs" & More React Hook <br/> 2. React's Context API & Redux <br/> 3. Forms, HTTP Request & "Custom Hooks" <br/> 4. Routing, Deploy,emt, NextJS & More        |
-| Summaries & Refreshers   | 1. JavaScript Refersher <br/> 2. ReactJS Summary <br/>|
+| Basic & Foundation      | 1. Components & Building UIs </br> 2. Working with Events & Data: "props" and "state" </br> 3. Styling React Apps & Components </br> 4. React Hooks      |
+| Advanced Concepts   | 1. Side Effects, "Refs" & More React Hook </br> 2. React's Context API & Redux </br> 3. Forms, HTTP Request & "Custom Hooks" </br> 4. Routing, Deploy,emt, NextJS & More        |
+| Summaries & Refreshers   | 1. JavaScript Refersher </br> 2. ReactJS Summary </br>|
 
 ---
 
 ## JavaScript Refresher
 
 ### let & const
+
+---
 
 used to be `var` but now we have `let` and `const`
 
@@ -48,17 +52,23 @@ used to be `var` but now we have `let` and `const`
 
 ### arrow
 
+---
+
 appears on ES6, it is a substitude of function.
 
 [Code Example](./JavaScript_Refresh/arrow.js)
 
 ### exports & imports
 
+---
+
 export and import function and variable/const
 
 [Code Example](./JavaScript_Refresh/export_import/app.js)
 
 ### classes
+
+---
 
 classes can store properties and funcitons.
 classes can obtain Inheritance
@@ -68,6 +78,8 @@ classes can be used to create instance and we can use this instance to call its 
 [Code Example for ES7](JavaScript_Refresh/classes_ES7.js)
 
 ### spread & rest operators
+
+---
 
 both spread and rest operators use `...` this notation
 spread is used to split up array elements OR object properties
@@ -88,6 +100,8 @@ function sortArgs(...args) {
 [Code Example](./JavaScript_Refresh/spread_rest_operators.js)
 
 ### destructuring
+
+---
 
 extract array elements or object properties and store them in variables
 
@@ -111,11 +125,14 @@ console.log{age}
 
 ### array
 
+---
+
 [Code Example](JavaScript_Refresh/array.js)
 
 ## React Basics & Working With Components
 
 ### Components
 
+---
 React is all about `component`
 All user interfaces in the end are made up of components
