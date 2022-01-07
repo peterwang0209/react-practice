@@ -2,9 +2,20 @@ import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
 import './Expenses.css';
 
+// this props are expenses constant variable from the App.js
 const Expenses = (props) => {
   return (
+
+    // Card customized component is imported from Card, it will take the className css style and append it the Card frame
     <Card className="expenses">
+
+      {/* the expenses constant variable has 4 datasets
+      we pass them through the ExpenseItem component,
+      notice that we can access the expenses dataset by using
+      
+      props.item[i].title/amount/date 
+      
+      and also the items is a user-defined attributes name*/}
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}

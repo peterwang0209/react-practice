@@ -1,5 +1,11 @@
 import './ExpenseDate.css';
 
+
+// the props here is the Date we pass in from the ExpenseItem
+// the entire paragraph is, we have the Date in App.js expense const variable
+// it got pass to the Expense, and pass into ExpenseItem
+// then it end up being here.
+
 const ExpenseDate = (props) => {
   const month = props.date.toLocaleString('en-US', { month: 'long' });
   const day = props.date.toLocaleString('en-US', { day: '2-digit' });

@@ -1,6 +1,11 @@
 import Expenses from "./components/Expenses/Expenses";
 
+// this is the arrow function, it is same as normal function
+// App takes no argument
+
 const App = () => {
+  
+  // expenses is a constant variable consisted of id, title, amount and date
   const expenses = [
     {
       id: "e1",
@@ -22,9 +27,13 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  // this is what App will return
   return (
     <div>
       <h2>Let's get started!</h2>
+      
+      {/* pass the expenses as items to the Expense Component */}
       <Expenses items={expenses}/>
     </div>
   );
