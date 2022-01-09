@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 // this is the arrow function, it is same as normal function
 // App takes no argument
@@ -28,10 +29,15 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expenses) => {
+    console.log('In App.js');
+    console.log(expenses);
+  }
+
   // this is what App will return
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       
       {/* pass the expenses as items to the Expense Component */}
       <Expenses items={expenses}/>
