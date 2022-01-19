@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
@@ -14,14 +13,6 @@ const ExpenseItem = (props) => {
   // instead of rendering entire webpage
   // props.title is the content we want to pay attention
   // and state is the current props.title
-  const [state, setstate] = useState(props.title);
-
-  // once the ClickHandler is triggered, then the setstate becomes certain state
-
-  // when we use const, we cannot use equal = sign to assign value
-  const clickHandler = () => {
-    setstate('Updated');
-  }
 
   return (
     <Card className='expense-item'>
@@ -32,14 +23,11 @@ const ExpenseItem = (props) => {
       <div className='expense-item__description'>
 
         {/* the state here is from the line 17 state which is also the props.title */}
-        <h2>{state}</h2>
+        <h2>{props.title}</h2>
 
         {/* props.amount */}
         <div className='expense-item__price'>${props.amount}</div>
       </div>
-
-      {/* onClick is a common js method */}
-      <button onClick={clickHandler}>Change title</button>
     </Card>
   );
 }
